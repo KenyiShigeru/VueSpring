@@ -1,20 +1,29 @@
 {
-    "name": "Java with Spring and Vue.js",
-    "extensions": [
-        "vscjava.vscode-java-pack",
-        "github.copilot",
-        "vscjava.vscode-spring-initializr",
-        "vuejs.vue-vscode-extensionpack"
-    ],
+    "name": "My Codespace",
+    "image": "mcr.microsoft.com/vscode/devcontainers/java:0-11",
     "settings": {
-        "java.home": "/usr/lib/jvm/java-11-openjdk-amd64",
-        "java.configuration.runtimes": [
-            {
-                "name": "JavaSE-11",
-                "path": "/usr/lib/jvm/java-11-openjdk-amd64",
-                "default": true
-            }
-        ]
+      "editor.fontSize": 14,
+      "editor.tabSize": 2,
+      "files.autoSave": "onFocusChange",
+      "terminal.integrated.shell.linux": "/bin/bash"
     },
-    "postCreateCommand": "npm install"
-}
+    "extensions": [
+        "github.copilot",
+        "vscjava.vscode-java-pack",
+        "pivotal.vscode-spring-boot",
+        "adpyke.codesnap",
+        "pranaygp.vscode-css-peek",
+        "usernamehw.errorlens",
+        "visualstudioexptteam.vscodeintellicode",
+        "octref.vetur",
+        "pkief.material-icon-theme",
+        "Equinusocio.vsc-material-theme",
+        "vscjava.vscode-spring-initializr"
+    ],
+    "forwardPorts": [
+      8080,
+      3000
+    ],
+    "postCreateCommand": "echo 'Codespace listo!'"
+  }
+  
